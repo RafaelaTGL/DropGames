@@ -1,0 +1,32 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/stylepagamento.css">
+        <script defer src="js/scriptpagamento.js"></script>
+        <link rel="website icon" type="png" href="img/pagar.png">
+        <title>Pagamento</title>
+    </head>
+
+    <body>
+        <div class="tela">
+            <h1>Pagamento</h1>
+
+            <form id="formPagamento">
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                <input type="text" name="numero" id="numero" inputmode="numeric" maxlength="19"
+                    placeholder="Número do cartão (0000 0000 0000 0000)" pattern="[0-9\s]{13,19}" required>
+                <input type="text" name="cvv" id="cvv" inputmode="numeric" maxlength="4" placeholder="CVV" pattern="\d{3,4}"
+                    required>
+                <input type="month" name="validade_cartao" id="validade_cartao" required>
+
+                <button onclick="window.open('chaves.html', '_blank');">Pagar</button>
+
+
+            </form>
+        </div>
+    </body>
+
+    </html>
